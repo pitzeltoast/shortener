@@ -1,0 +1,31 @@
+{
+  "name": "shortener",
+  "version": "1.0.0",
+  "description": "pitzel.net link shortener",
+  "main": "build/api/index.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pitzeltoast/shortener.git"
+  },
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "chalk": "^4.1.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.5"
+  },
+  "author": "Pitzel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pitzeltoast/shortener/issues"
+  },
+  "homepage": "https://github.com/pitzeltoast/shortener#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.8"
+  }
+}
