@@ -19,7 +19,7 @@ app.get("/", (_, res) => {
   res.send("URL shortener thing");
 });
 app.use((_, res) => {
-  res.status(404).send("Invalid URL");
+  res.status(400).send("Invalid URL");
 });
 const errorHandler: ErrorRequestHandler = (err, _, res, __) => {
   if (err.type == "entity.parse.failed") {
