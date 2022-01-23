@@ -55,7 +55,6 @@ export async function newShort(req: Request, res: Response) {
           error: { message: err.message, code: 500 },
         });
       }
-      logger.green(`generated ${short} for ${url}`);
       res.json({
         short,
         success: true,
@@ -83,7 +82,6 @@ export async function deleteShort(req: Request, res: Response) {
           error: { message: "error deleting short link", code: 500 },
         });
       }
-      logger.green(`deleted ${short}`);
       res.json({ success: true });
     }
   );
